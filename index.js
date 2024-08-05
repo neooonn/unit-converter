@@ -34,3 +34,4 @@ function convert() {
         massAnswer.textContent = "";
     }
 }
+convertBtn.addEventListener("click", convert);

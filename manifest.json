@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Quick Converter",
+    "description": "A simple unit converter",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "exchange.png"
+    },
+    "icons": {
+        "16": "exchange.png",
+        "48": "exchange.png",
+        "128": "exchange.png"
+    }
+}
