@@ -1,12 +1,29 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"
+import { getDatabase } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js"
+
+const firebaseConfig = {
+    databaseURL: "https://quick-converter-be76b-default-rtdb.asia-southeast1.firebasedatabase.app/"
+}
+
+const app = initializeApp(firebaseConfig);
+const dataBase = getDatabase(app)
+
+
+console.log(dataBase)
+
+
+
 let inputEl = document.querySelector(".input-el")
 let convertBtn = document.querySelector(".convert-btn")
-
 
 
 let lengthAnswer = document.querySelector(".length-answer")
 let volumeAnswer = document.querySelector(".volume-answer")
 let massAnswer = document.querySelector(".mass-answer")
 let errorEl = document.querySelector("error-el")
+
+
+
 
 function convert() {
     let inputValue = parseFloat(inputEl.value);
